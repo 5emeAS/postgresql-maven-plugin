@@ -98,6 +98,11 @@
                 <version>3.2</version>
                 <configuration>
                     <goalPrefix>postgresql-maven-plugin</goalPrefix>
+                        <pgsqlHome>192.168.56.2:31529/pgsql</pgsqlHome>
+                        <dataDir>192.168.56.2:31529/data</dataDir>
+                        <skip>${skipITs}</skip>
+                        <databaseName>postgres</databaseName>
+                        <username>postgres</username>
                     <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
                 </configuration>
                 <executions>
